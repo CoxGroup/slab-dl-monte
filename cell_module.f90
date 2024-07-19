@@ -6001,7 +6001,7 @@ subroutine insert_atom(ib, typ, imol, ia, lauto, atom_out)
 
     buff(1) = duni() - 0.5_wp
     buff(2) = duni() - 0.5_wp
-    buff(3) = duni() - 0.5_wp !anna bui 19th July 2024 
+    buff(3) = duni() - 0.5_wp !Anna T. Bui 19th July 2024 
 
     if( myjob%usegcexcludeslab ) then
 
@@ -6339,7 +6339,7 @@ subroutine insert_molecule(ib, ml, imol, atom_out, as_whole)
         !AB: get com-position for a new molecule
         buff(1) = duni() - 0.5_wp
         buff(2) = duni() - 0.5_wp
-        buff(3) = duni() - 0.5_wp !Anna Bui 19th July 2024 
+        buff(3) = duni() - 0.5_wp !Anna T. Bui 19th July 2024 
 
 
         if( myjob%usegcexcludeslab ) then
@@ -6404,7 +6404,7 @@ subroutine insert_molecule(ib, ml, imol, atom_out, as_whole)
 
            buff(1) = duni() - 0.5_wp
            buff(2) = duni() - 0.5_wp
-           buff(3) = duni() - 0.5_wp !Anna Bui 19th July 2024 
+           buff(3) = duni() - 0.5_wp !Anna T. Bui 19th July 2024 
 
            
            if( myjob%usegcexcludeslab ) then
@@ -6637,7 +6637,7 @@ subroutine insert_molecule_atcavity(ib, ml, imol, typ, ig, prob, atom_out, as_wh
             !AB: get com-position for a new molecule
             buff(1) = duni() - 0.5_wp
             buff(2) = duni() - 0.5_wp
-            buff(3) = duni() - 0.5_wp !Anna Bui 19th July 2024 
+            buff(3) = duni() - 0.5_wp !Anna T. Bui 19th July 2024 
 
             if( myjob%useorthogonal ) then
 
@@ -6812,7 +6812,7 @@ subroutine insert_molecule_atcavity(ib, ml, imol, typ, ig, prob, atom_out, as_wh
 
                buff(1) = duni() - 0.5_wp
                buff(2) = duni() - 0.5_wp
-               buff(3) = duni() - 0.5_wp !Anna Bui 19th July 2024 
+               buff(3) = duni() - 0.5_wp !Anna T. Bui 19th July 2024 
 
                if( myjob%useorthogonal ) then
 
