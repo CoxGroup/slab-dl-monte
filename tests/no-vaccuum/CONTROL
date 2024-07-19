@@ -1,0 +1,29 @@
+GCMC Lennard-Jones
+   use chempotkt # chemical activity if not specifed
+   finish
+   seeds 12 34 56 78             
+   temperature    1.0 
+
+   steps           1000000000            # Number of moves to perform in simulation
+   equilibration   0             
+   slit walls soft 2  
+
+sample zdensity  500  1000
+                                
+   print           10000           
+   stack           1000           
+   sample coord    1000          
+   sample rdfs     400 4.0  100
+   revconformat  dlpoly4           
+   archiveformat dlpoly4           
+                                   
+   yamldata 1000
+   move gcinsertmol 1 100 0.7      
+   lj  -3.0            
+ 
+   #  move atom 1 512                 # Move atoms with a weight of 512
+   #  LJ core
+   #  move volume cubic linear 1      # Move volume, box is cubic,
+   #                                # linear scaling with a weight of 1
+   start
+
