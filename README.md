@@ -8,9 +8,6 @@ For GCMC simulation in the slab geometry where the slit is placed in the center 
 the density of the fluid at the center of the slit does not match with the bulk density at the same chemical potential.
 
 
-In GCMC, the volume enters the acceptance criteria for insertions [stuff/vol] and deletions [vol*(other stuff)]. In the original implementation, they tried to make things more efficient by only inserting into the slab region (where moves are likely to be accepted). This has the consequence of effectively reducing the volume of the system, but this was not accounted for in the acceptance criteria. The had a knock-on effect of (effectively) changing the fugacity of the system, so the densities inside the slit did not correspond to their bulk values.
-
-
 The reason for this is because in GCMC, the volume of the box $V$ enters the acceptance criteria for insertion as
 
 ```math
